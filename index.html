@@ -241,12 +241,46 @@
           <h2>لنناقش فرص الطاقة المتجددة والبنية التحتية</h2>
           <p>يسعد فريق نور للتقنية بحث فرص التطوير والاستثمار والاستشارات الفنية والتمويلية في قطاع الطاقة.</p>
         </div>
-        <form class="contact-form" action="mailto:info@noortech.com" method="post" enctype="text/plain">
-          <label>الاسم<input type="text" name="name" placeholder="اكتب اسمك" required></label>
-          <label>البريد الإلكتروني<input type="email" name="email" placeholder="example@company.com" required></label>
-          <label>الرسالة<textarea name="message" rows="4" placeholder="كيف يمكننا المساعدة؟" required></textarea></label>
-          <button class="btn primary" type="submit">إرسال الرسالة</button>
-        </form>
+       <form id="contactForm" class="contact-form" action="https://formly.email" method="POST">
+  <!-- Your Formly access key -->
+  <input type="hidden" name="accessKey" value="9cd31edb8f214c4d95e88035ccae5ec0">
+
+  <!-- Target email -->
+  <input type="hidden" name="to" value="info@noortech.com">
+
+  <!-- Form fields -->
+  <label>الاسم
+    <input type="text" name="name" placeholder="اكتب اسمك" required>
+  </label>
+  <label>البريد الإلكتروني
+    <input type="email" name="email" placeholder="example@company.com" required>
+  </label>
+  <label>الرسالة
+    <textarea name="message" rows="4" placeholder="كيف يمكننا المساعدة؟" required></textarea>
+  </label>
+
+  <button class="btn primary" type="submit">إرسال الرسالة</button>
+</form>
+
+<!-- Success message (hidden by default) -->
+<div id="confirmation" style="display:none; margin-top:20px; color:green; font-weight:bold;">
+  ✅ تم إرسال رسالتك بنجاح. سيتواصل فريق نور للتقنية معك قريباً.
+</div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault(); // stop normal submission
+  const formData = new FormData(this);
+  const response = await fetch(this.action, { method: 'POST', body: formData });
+  if (response.ok) {
+    this.style.display = 'none'; // hide the form
+    document.getElementById('confirmation').style.display = 'block'; // show success
+  } else {
+    alert("حدث خطأ أثناء الإرسال. حاول مرة أخرى."); // fallback error
+  }
+});
+</script>
+
       </div>
     </section>
   </main>
