@@ -52,16 +52,16 @@ function toggleLang() {
     html.setAttribute('dir', 'ltr');
     html.setAttribute('lang', 'en');
     setPlaceholders('en');
-    if (logo) { logo.src = 'images/logo-en.jpg'; logo.alt = 'Noortech'; }
-    if (footerLogo) { footerLogo.src = 'images/logo-en.jpg'; footerLogo.alt = 'Noortech'; }
+    if (logo) { logo.src = 'images/logo-en.png'; logo.alt = 'Noortech'; }
+    if (footerLogo) { footerLogo.src = 'images/logo-en.png'; footerLogo.alt = 'Noortech'; }
   } else {
     document.body.classList.remove('lang-en');
     document.body.classList.add('lang-ar');
     html.setAttribute('dir', 'rtl');
     html.setAttribute('lang', 'ar');
     setPlaceholders('ar');
-    if (logo) { logo.src = 'images/logo-ar.jpg'; logo.alt = 'نور للتقنية'; }
-    if (footerLogo) { footerLogo.src = 'images/logo-ar.jpg'; footerLogo.alt = 'نور للتقنية'; }
+    if (logo) { logo.src = 'images/logo-ar.png'; logo.alt = 'نور للتقنية'; }
+    if (footerLogo) { footerLogo.src = 'images/logo-ar.png'; footerLogo.alt = 'نور للتقنية'; }
   }
 }
 
