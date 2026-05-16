@@ -312,3 +312,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Close on ESC
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ============================================================
+// FORM SUBMISSION — inline success message
+// ============================================================
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+
+    const formData = new FormData(contactForm);
+    try {
+      await fetch('https://formly.email/submit', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      });
+    } catch (err) {
+      console.warn('Form error:', err);
+    }
+
+    contactForm.style.display = 'none';
+    const success = document.getElementById('form-success');
+    if (success) success.style.display = 'block';
+  });
+}
