@@ -69,6 +69,38 @@ function toggleLang() {
 // TEAM MODAL
 // ============================================================
 const teamData = {
+  'richard-scott': {
+    ar: {
+      name: 'ريتشارد سكوت',
+      title: 'مستشار قطاعي',
+      bio: [
+        'ريتشارد سكوت مستشار قطاعي يتمتع بخبرة واسعة في مشاريع الطاقة المتجددة البرية والبحرية، حيث أمضى معظم مسيرته المهنية الممتدة لـ22 عاماً في العمل على مشاريع الطاقة المتجددة عبر خمس قارات.',
+        'يشغل حالياً منصب نائب الرئيس للعمليات في JERA Nex، ويتولى مسؤولية تنفيذ محفظة الشركة العالمية لمشاريع الطاقة المتجددة البرية.',
+        'وقبل إطلاق JERA Nex، شغل منصب مدير تطوير الأعمال لقطاع الطاقة المتجددة في JERA. كما عمل سابقاً لدى SSE Renewables في عدة مناصب، من بينها رئيس تطوير الأعمال وإدارة الأصول التشغيلية لمشاريع الرياح البرية والبحرية. مهندس مدني بالتدريب، أقام في سنغافورة والإمارات وكينيا وسيراليون والعراق، ويقيم حالياً في المملكة المتحدة.'
+      ],
+      credentials: [
+        'نائب الرئيس للعمليات — JERA Nex',
+        'مدير تطوير الأعمال السابق — JERA Renewables',
+        'رئيس تطوير الأعمال وإدارة الأصول — SSE Renewables',
+        'مهندس مدني بالتدريب'
+      ]
+    },
+    en: {
+      name: 'Richard Scott',
+      title: 'Sector Advisor',
+      bio: [
+        'Richard Scott is a Sector Advisor with experience in both onshore and offshore renewables, having spent most of his 22-year career working on renewables projects across five continents.',
+        'Richard is VP Operations at JERA Nex, where he is responsible for the delivery of the company\'s global onshore renewables portfolio.',
+        'Before the launch of JERA Nex, Richard was the Business Development Director for JERA\'s renewables business. Previously, he was with SSE Renewables in roles including Head of Business Development and operational asset management of offshore and onshore wind projects. A civil engineer by training, Richard has lived in Singapore, UAE, Kenya, Sierra Leone, and Iraq, and currently resides in the UK.'
+      ],
+      credentials: [
+        'VP Operations — JERA Nex',
+        'Business Development Director — JERA Renewables',
+        'Head of Business Development & Asset Management — SSE Renewables',
+        'Civil Engineer by training'
+      ]
+    }
+  },
   'matt-cheney': {
     ar: {
       name: 'مات تشيني',
