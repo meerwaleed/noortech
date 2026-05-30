@@ -188,7 +188,7 @@ const teamData = {
         'كما لعب دوراً مهماً في تحسين كفاءة سير العمل المالي من خلال دمج أنظمة تخطيط موارد المؤسسات ERP مثل (Odoo, NetSuite, QuickBooks)، إضافة إلى تطوير نماذج احترافية للتسويات والتقارير المالية باستخدام Excel.'
       ],
       credentials: [
-        'عضوية جمعية المحاسبين القانونيين المعتمدين البريطانية ACCA',
+        'شهادة CPA وماجستير إدارة أعمال، مع مستوى متقدم في مؤهل ACCA المهني',
         'محاسب قانوني معتمد CPA — معهد المحاسبين القانونيين المعتمدين في باكستان (ICPAP)',
         'ماجستير في إدارة الأعمال — الجامعة الافتراضية في باكستان',
         'بكالوريوس في التجارة — جامعة البنجاب في باكستان'
@@ -203,7 +203,7 @@ const teamData = {
         'Meer has played a key role in improving financial workflow efficiency through the integration of ERP systems including Odoo, NetSuite, and QuickBooks, and development of structured Excel-based reconciliation and reporting models.'
       ],
       credentials: [
-        'ACCA — Association of Chartered Certified Accountants',
+        'CPA certification and an MBA, with advanced standing in the ACCA professional qualification',
         'CPA — Institute of Certified Public Accountants of Pakistan (ICPAP)',
         'MBA — Virtual University of Pakistan',
         'Bachelor of Commerce — University of the Punjab'
