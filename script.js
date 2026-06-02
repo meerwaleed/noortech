@@ -124,7 +124,7 @@ const teamData = {
   'hani-bakr': {
     ar: {
       name: 'هاني بكر',
-      title: 'العضو المنتدب والشريك المؤسس',
+      title: 'المدير العام — الاستراتيجية والاستثمارات',
       bio: [
         'هاني طلال بكر هو العضو المنتدب والشريك المؤسس لشركة نور للتقنية، ويتمتع بخبرة تتجاوز 30 عاماً في المملكة العربية السعودية، تمتد عبر قطاعات البنوك والخدمات المالية والعقارات والأعمال الدولية والامتثال والعمليات التشغيلية.',
         'قاد نمو شركة نور للتقنية وتحويلها إلى مقاول موثوق لحلول الخدمات الكهربائية في القطاعين التجاري والصناعي.',
@@ -134,7 +134,7 @@ const teamData = {
     },
     en: {
       name: 'Hani Bakr',
-      title: 'Managing Director & Co-Founder',
+      title: 'Managing Director — Strategy & Investments',
       bio: [
         'Hani Bakr brings over 30 years of experience in Saudi Arabia spanning banking, financial services, real estate, international business, compliance and operations.',
         'He has led the growth of Noortech, building it into a capable service provider in electrical solutions across commercial and industrial sectors. He is currently leading the evolution of Noortech into a next-generation energy platform.',
@@ -146,7 +146,7 @@ const teamData = {
   'waleed-bakr': {
     ar: {
       name: 'وليد بكر',
-      title: 'المدير الهندسي والشريك المؤسس',
+      title: 'المدير العام — الهندسة',
       bio: [
         'وليد طلال بكر هو المدير الهندسي والشريك المؤسس لشركة نور للتقنية، ويتمتع بخبرة تتجاوز ثلاثة عقود في مجالات الهندسة الكهربائية وتنفيذ المشاريع والقيادة التنفيذية في القطاعات الصناعية والبنية التحتية بالمملكة العربية السعودية.',
         'لعب دوراً محورياً في بناء وتوسيع أعمال نور للتقنية، وتحويلها من شركة هندسية تركز على المشاريع إلى مزود موثوق لحلول الكهرباء والطاقة يخدم العملاء التجاريين والصناعيين. تكمن قوة وليد في الجمع بين الخبرة الفنية والقيادة التشغيلية، حيث أشرف على تنفيذ مشاريع معقدة وإدارة محافظ مشاريع كبيرة وقيادة فرق متعددة التخصصات على نطاق واسع.',
@@ -163,7 +163,7 @@ const teamData = {
     },
     en: {
       name: 'Waleed Bakr',
-      title: 'Engineering Director & Co-Founder',
+      title: 'Managing Director — Engineering',
       bio: [
         'Waleed Bakr has over three decades of experience across electrical engineering, project execution, and executive leadership within Saudi Arabia\'s industrial and infrastructure sectors.',
         'He played a central role in building and scaling Noortech from a project-focused engineering firm into a trusted provider of electrical and energy solutions. His strength lies in combining technical expertise with operational leadership, having overseen complex installations, managed large project portfolios, and led multidisciplinary teams at scale.',
