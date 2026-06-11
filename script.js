@@ -26,11 +26,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// 🔹 Language toggle
-const placeholders = {
-  ar: { name: 'اكتب اسمك', email: 'example@company.com', message: 'كيف يمكننا المساعدة؟' },
-  en: { name: 'Enter your name', email: 'example@company.com', message: 'How can we help you?' }
-};
+;
 
 function setPlaceholders(lang) {
   const p = placeholders[lang];
@@ -42,28 +38,7 @@ function setPlaceholders(lang) {
   if (m) m.placeholder = p.message;
 }
 
-function toggleLang() {
-  const html = document.documentElement;
-  const logo = document.getElementById('brand-logo');
-  const footerLogo = document.getElementById('footer-logo');
-  if (document.body.classList.contains('lang-ar')) {
-    document.body.classList.remove('lang-ar');
-    document.body.classList.add('lang-en');
-    html.setAttribute('dir', 'ltr');
-    html.setAttribute('lang', 'en');
-    setPlaceholders('en');
-    if (logo) { logo.src = 'images/logo-en.png'; logo.alt = 'Noortech'; }
-    if (footerLogo) { footerLogo.src = 'images/logo-en.png'; footerLogo.alt = 'Noortech'; }
-  } else {
-    document.body.classList.remove('lang-en');
-    document.body.classList.add('lang-ar');
-    html.setAttribute('dir', 'rtl');
-    html.setAttribute('lang', 'ar');
-    setPlaceholders('ar');
-    if (logo) { logo.src = 'images/logo-ar.png'; logo.alt = 'نور للتقنية'; }
-    if (footerLogo) { footerLogo.src = 'images/logo-ar.png'; footerLogo.alt = 'نور للتقنية'; }
-  }
-}
+
 
 // ============================================================
 // TEAM MODAL
@@ -203,7 +178,7 @@ const teamData = {
         'Meer has played a key role in improving financial workflow efficiency through the integration of ERP systems including Odoo, NetSuite, and QuickBooks, and development of structured Excel-based reconciliation and reporting models.'
       ],
       credentials: [
-        'CPA certification and an MBA, with advanced standing in the ACCA professional qualification',
+        'Association of Chartered Certified Accountants (ACCA-UK)',
         'CPA — Institute of Certified Public Accountants of Pakistan (ICPAP)',
         'MBA — Virtual University of Pakistan',
         'Bachelor of Commerce — University of the Punjab'
@@ -302,7 +277,7 @@ const teamData = {
 };
 
 function openModal(memberId) {
-  const lang = document.body.classList.contains('lang-en') ? 'en' : 'ar';
+  const lang = 'en';
   const d = teamData[memberId][lang];
   const isRtl = lang === 'ar';
 
