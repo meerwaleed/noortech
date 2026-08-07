@@ -224,23 +224,6 @@ body.lang-en .hero h1 {
   .footer-grid { grid-template-columns:1fr }
 }
 
-/* ================= LANGUAGE TOGGLE ================= */
-/* Hide the "other" language; shown elements keep their natural display value */
-body.lang-ar .lang-en { display: none; }
-body.lang-en .lang-ar { display: none; }
-
-/* Lang toggle link styling */
-.lang-toggle {
-  color: var(--gold) !important;
-  font-weight: 800;
-  border: 1px solid rgba(217,164,65,.4);
-  border-radius: 999px;
-  padding: 6px 14px;
-  font-size: .85rem;
-  transition: .25s;
-}
-.lang-toggle:hover { background: rgba(217,164,65,.12); }
-
 /* ================= TWO-COL LAYOUT ================= */
 .two-col {
   display:grid;

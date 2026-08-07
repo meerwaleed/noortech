@@ -1,10 +1,12 @@
-موقع نور للتقنية - النسخة العربية
+Noortech Website (English)
 
-طريقة التشغيل:
-1. افتح ملف index.html مباشرة في المتصفح.
-2. أو ارفع الملفات الثلاثة index.html و styles.css و script.js إلى أي استضافة مواقع.
+How to run:
+1. Open index.html directly in a browser.
+2. Or upload index.html, styles.css, and script.js to any web hosting.
 
-ملاحظات التخصيص:
-- يمكن تغيير بريد نموذج التواصل من داخل index.html عند السطر الذي يحتوي على mailto:info@noortech.com
-- يمكن إضافة شعار رسمي باستبدال عنصر brand-mark بصورة شعار.
-- التصميم يدعم العربية RTL ومتوافق مع الجوال والتابلت وسطح المكتب.
+Customization notes:
+- The contact form's target email/service is configured in index.html and script.js
+  (POSTs to https://formly.email/submit).
+- Team member bios shown in the "Read More" modal are in script.js (teamData object).
+- The logo is images/logo-en.png.
+- Design supports mobile, tablet, and desktop.
